@@ -39,17 +39,17 @@
 
 .title{
     font-family: 'Rammetto One', sans-serif;
-    color: #707070;
+    color: rgb(60,60,70);
     font-size:46px;
     font-weight: normal;
     margin:0;
-    text-shadow: 2px 2px 4px rgba(75, 75, 75, 0.5);
+    text-shadow: 2px 2px 4px rgba(196, 196, 196, 0.5);
 }
 
 
 .subtitle {
     font-family: 'Rammetto One', sans-serif;
-    color: #989898;
+    color: brown;
     font-size: 16px;
     letter-spacing: 5px;
     margin: 10px 0 0 0;
@@ -75,7 +75,7 @@
     transition: 0.4s;
     padding:0 0px;
     box-sizing:border-box;
-    color:rgb(124, 124, 124);
+    color: brown;
 }
 
 
@@ -83,7 +83,7 @@
     font-family: 'Rammetto One', sans-serif;
     margin:0;
     font-size:10px;
-    color:#7c7c7c;
+    color: rgb(60,60,70);
     line-height:15px;
     font-weight:lighter;
     width: 80%;
@@ -97,7 +97,7 @@
     height:100%;
     margin-left:-1px;
     content:"";
-    background:rgb(120, 120, 120);
+    background-color: rgb(60,60,70);
 }
 
 .item{
@@ -260,7 +260,7 @@ left: 40px;}
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #777777;
+    background-color: rgb(60,60,70);
     color: #ffffff;
     padding: 10px 15px;
     border-radius: 25px;
@@ -270,6 +270,6 @@ left: 40px;}
 }
 
 .back-to-top:hover {
-    background-color: #727272;
+    background-color: brown;
 }
 
