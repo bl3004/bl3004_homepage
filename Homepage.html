@@ -1,218 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
-
+    <title>WELCOME</title>
     <style>
-        body {
+        body{
+            background-color: rgb(60,60,70);
             display: flex;
-            align-items: center;
             justify-content: center;
-            flex-direction: column;
-            height: 100vh;
-            background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
-            overflow: hidden;
         }
-
-        /* 定义外层容器样式 */
-        .shell {
+        .a{
             position: relative;
-            /* 相对定位 */
-            width: 60vw;
-            /* 宽度占视口宽度的60% */
-            height: 40vw;
-            /* 高度占视口高度的40% */
-            max-width: 380px;
-            /* 最大宽度为380像素 */
-            max-height: 250px;
-            /* 最大高度为250像素 */
-            margin: 0;
-            /* 外边距为0 */
-            color: white;
-            /* 字体颜色为白色 */
-            perspective: 1000px;
-            /* 透视效果，观察者与z=0平面的距离 */
-            transform-origin: center;
-            /* 变形原点为中心 */
-        }
-
-        /* 定义内容容器样式 */
-        .content {
+            top: 250px;
+            width: 300px;
             display: flex;
-            /* 设置为弹性盒子布局 */
             justify-content: center;
-            /* 主轴居中对齐 */
-            align-items: center;
-            /* 交叉轴居中对齐 */
+            margin: 0 30px;
+        }
+        .c,.b{
+            font: 900 100px '';
+            line-height: 150px;
             position: absolute;
-            /* 绝对定位 */
-            width: 100%;
-            /* 宽度100% */
-            height: 100%;
-            /* 高度100% */
-            transform-origin: center;
-            /* 变形原点为中心 */
-            transform-style: preserve-3d;
-            /* 保持3D变换 */
-            transform: translateZ(-30vw) rotateY(0);
-            /* 变换：沿z轴平移-30vw，绕y轴旋转0度 */
-            animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
-            /* 动画：名称为carousel，持续时间9秒，无限循环，缓动函数为cubic-bezier(0.77, 0, 0.175, 1)，动画结束后保持最后状态 */
+            color: brown;
+            top: 0;
+            /* 使文字上下移动时有0.4s的过渡效果 */
+            transition: .4s;
         }
 
-        /* 定义项目样式 */
-        .item {
-            position: absolute;
-            /* 绝对定位 */
-            width: 60vw;
-            /* 宽度占视口宽度的60% */
-            height: 40vw;
-            /* 高度占视口高度的40% */
-            max-width: 380px;
-            /* 最大宽度为380像素 */
-            max-height: 250px;
-            /* 最大高度为250像素 */
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-            /* 设置阴影 */
-            border-radius: 6px;
-            /* 边框圆角半径为6像素 */
-            background-size: cover;
-            /* 背景图片等比例缩放并覆盖整个容器 */
-            -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
-            /* 创建倒影效果 */
-            background-position: center; 
+        .c{
+            /* 裁剪文字的上半部分，括号里的四个值分别是
+            top，right，bottom，left */
+            clip-path: inset(49% 0 0 0);
         }
-
-        /* 第一个项目样式 */
-        .item:nth-child(1) {
-            background-image: url(./HomepageImage/01.jpg);
-            transform: rotateY(0) translateZ(35vw);
-            /* 变换：绕y轴旋转0度，沿z轴平移35vw */
+        .b{
+            /* 裁剪文字的下半部分 */
+            clip-path: inset(1% 0 50% 0);
         }
-
-        /* 第二个项目样式 */
-        .item:nth-child(2) {
-            background-image: url(./HomepageImage/02.jpg);
-            /* 背景图片为02.jpg */
-            transform: rotateY(120deg) translateZ(35vw);
-            /* 变换：绕y轴旋转120度，沿z轴平移35vw */
+        .a:hover .b,.a:hover .c{
+            /* 让--i为30的向上移动30px，-30的向下移动30px
+            这样子就能空出60px留给中间的超链接 */
+            top: calc(var(--i)*1px);
         }
-
-        /* 第三个项目样式 */
-        .item:nth-child(3) {
-            background-image: url(./HomepageImage/03.jpg);
-            /* 背景图片为03.jpg */
-            transform: rotateY(240deg) translateZ(35vw);
-            /* 变换：绕y轴旋转240度，沿z轴平移35vw */
+        .a:hover .d{
+            opacity: 1;
         }
-
-
-        
-
-        /* 定义动画 */
-        @keyframes carousel {
-
-            0%,
-            17.5% {
-                transform: translateZ(-35vw) rotateY(0);
-                /* 变换：沿z轴平移-35vw，绕y轴旋转0度 */
-            }
-
-            27.5%,
-            45% {
-                transform: translateZ(-35vw) rotateY(-120deg);
-                /* 变换：沿z轴平移-35vw，绕y轴旋转-120度 */
-            }
-
-            55%,
-            72.5% {
-                transform: translateZ(-35vw) rotateY(-240deg);
-                /* 变换：沿z轴平移-35vw，绕y轴旋转-240度 */
-            }
-
-            82.5%,
-            100% {
-                transform: translateZ(-35vw) rotateY(-360deg);
-                /* 变换：沿z轴平移-35vw，绕y轴旋转-360度 */
-            }
-        }
-
-
-        .text1 {
-            font-family: 'Rammetto One', sans-serif;
-            font-weight: 500; 
-            color: white;
-            font-size: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 10px;
-            }
-
-        .text2 {
-            font-family: 'Rammetto One', sans-serif;
-            font-weight: 100; 
-            color: white;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 5px;
-        }
-
-        .text3 {
+        .d{
             text-decoration: none;
-            font-family: 'Rammetto One', sans-serif;
-            color: white;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 30px;
-            padding-bottom: 10px;
-            z-index: 999;
+            color: cyan;
+            font: 600 30px '';
+            line-height: 150px;
+            opacity: 0;
+            transition: .3s;
         }
-
-        .text4 {
-            font-family: 'Rammetto One', sans-serif;
-            color: white;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 30px;
-        }
-
     </style>
 </head>
-
 <body>
-
-    <div class="text1">PORTFOLIO</div>
-    <div class="text2">Selected Personal Works From 2010 to Now</div>
-    <div class="text4">by Biying Li</div>
-
-    <div class="shell">
-        <div class="content">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            
-        </div>
+    <div class="a">
+        <div class="b" style="--i:-30">BI</div>
+        <div class="c" style="--i:30">BI</div>
+        <a href="#" class="d">时间轴/Timeline</a>
     </div>
-
-    <a class="text3" href="https://bl3004.github.io/bl3004_homepage/ProjectTimeline.html">
-    <div class="text3">ENTER</div>
-    </a>
-
-
-
+    <div class="a">
+        <div class="b" style="--i:-30">YING</div>
+        <div class="c" style="--i:30">YING</div>
+        <a href="#" class="d">项目列表/List</a>
+    </div>
+    <div class="a">
+        <div class="b" style="--i:-30">LI</div>
+        <div class="c" style="--i:30">LI</div>
+        <a href="https://bl3004.github.io/bl3004_homepage/Contact.html" class="d">联系/Contact</a>
+    </div>
+    
 </body>
-
 </html>

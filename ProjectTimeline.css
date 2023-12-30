@@ -1,0 +1,275 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+
+
+
+
+
+.shell {
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    transition: 0.3s ease 0s;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+
+.shell:before{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    content:"";
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header{
+    width:100%;
+    text-align: center;
+    margin-bottom: 80px;
+    position:relative;
+}
+
+.title{
+    font-family: 'Rammetto One', sans-serif;
+    color: #707070;
+    font-size:46px;
+    font-weight: normal;
+    margin:0;
+    text-shadow: 2px 2px 4px rgba(75, 75, 75, 0.5);
+}
+
+
+.subtitle {
+    font-family: 'Rammetto One', sans-serif;
+    color: #989898;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+    
+    }
+
+
+.timeline{
+    display: flex;
+    margin:0 auto;
+    flex-wrap:wrap;
+    flex-direction: column;
+    max-width:1000px;
+    position:relative;
+}
+
+
+.content-title{
+    font-family: 'Rammetto One', sans-serif;
+    font-weight: normal;
+    font-size:40px;
+    transition: 0.4s;
+    padding:0 0px;
+    box-sizing:border-box;
+    color:rgb(124, 124, 124);
+}
+
+
+.content-desc{
+    font-family: 'Rammetto One', sans-serif;
+    margin:0;
+    font-size:10px;
+    color:#7c7c7c;
+    line-height:15px;
+    font-weight:lighter;
+    width: 80%;
+    text-align: justify;
+}
+
+.timeline:before{
+    position:absolute;
+    left:50%;
+    width:2px;
+    height:100%;
+    margin-left:-1px;
+    content:"";
+    background:rgb(120, 120, 120);
+}
+
+.item{
+    padding:40px 0;
+    opacity:0.3;
+    filter:blur(2px);
+    transition:0.5s;
+    box-sizing:border-box;
+    width:calc(50% - 40%);
+    display:flex;
+    position:relative;
+    transform:translateY(-10px);
+   
+}
+
+
+/* .item:before{
+    content:attr(data-text);
+    letter-spacing:3px;
+    width:100%;
+    position:absolute;
+    color:rgb(117, 117, 117);
+    font-size:13px;
+    border-left:2px solid rgb(113, 113, 113);
+    top:70%;
+    margin-top:-5px;
+    padding-left:15px;
+    opacity:0;
+    right:calc(-100% - 56px);
+    font: 900 20px;
+    letter-spacing: 5px;
+} */
+
+
+@media only screen and (max-width: 767px) {
+    .item:nth-child(even) {
+    align-self: flex-start; 
+}
+
+
+
+.item:nth-child(even):before {
+    text-align: left; 
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 10px;
+    left: 40px; 
+    padding-left: 15px; 
+    border-left: 2px solid rgb(119, 119, 119); 
+    border-right: none;
+    padding-right: 0; 
+}
+}
+
+
+@media only screen and (min-width: 767px) {
+    .item:nth-child(even) {
+    align-self: flex-start; 
+    left:calc(50% + 80px);
+}
+
+
+
+.item:nth-child(even):before {
+   
+    text-align: left; /* Change from right to left */
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 10px;
+    left: 40px; /* Add a left margin */
+    padding-left: 15px; /* Add left padding */
+    border-left: 2px solid rgb(119, 119, 119); /* Adjust the border accordingly */
+    border-right: none; /* Remove the right border */
+    padding-right: 0; /* Remove right padding */
+}
+}
+
+
+
+
+.item--active {
+opacity: 1;
+transform: translateY(0);
+filter: blur(0px);
+
+}
+
+
+.item--active:before {
+top: 50%;
+transition: 0.3s all 0.2s;
+opacity: 1;
+font-family: 'Rammetto One', sans-serif;
+font-size: 10px;
+}
+
+.item--active .content-title {
+margin: -50px 0 20px 0;
+
+}
+
+
+
+@media only screen and (min-width: 767px) {
+    img {
+    max-width: 450px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    }}
+        
+
+@media only screen and (max-width: 767px) {
+    img {
+    max-width: 400px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    }}
+
+
+
+.footer {
+padding: 95px 0;
+text-align: center;
+}
+
+.footer a {
+color: #999;
+display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+.item {
+align-self: baseline;
+width: 100%;
+padding: 0 30px 150px 80px;
+}
+
+.item:before {
+left: 10px;
+padding: 0;
+top: 50px;
+text-align: center;
+width: 60px;
+border: none;
+font-family: 'Rammetto One', sans-serif;
+}
+
+
+.item:last-child {
+padding-bottom: 40px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+.timeline:before {
+left: 40px;}
+}
+}
+
+
+/* Add these styles for the back-to-top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #777777;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: none;
+    font-family: 'Rammetto One', sans-serif;
+}
+
+.back-to-top:hover {
+    background-color: #727272;
+}
+
