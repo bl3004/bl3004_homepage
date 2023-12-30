@@ -6,21 +6,21 @@ const projects = [
         "./FilterImage/01.jpg",
         name: "RYTHEM UTOPIA",
         year: "1970s",
-        description: ".."
+        description: "Concept"
     },
     {
         image:
         "./FilterImage/02.jpg",
-        name: "..",
+        name: "CAMPUS",
         year: "1970s",
-        description: ".."
+        description: "Built"
     },
     {
         image:
         "./FilterImage/03.jpg",
-        name: "..",
+        name: "URBAN CORRIDOR",
         year: "1970s",
-        description: ".."
+        description: "Concept"
     }
 
 
