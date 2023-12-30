@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@300;400;900&display=swap" rel="stylesheet">
+
+
     <title>WELCOME</title>
     <style>
         body{
@@ -18,6 +25,8 @@
             display: flex;
             justify-content: center;
             margin: 0 30px;
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
         }
         .c,.b{
             font: 900 100px '';
@@ -27,25 +36,38 @@
             top: 0;
             /* 使文字上下移动时有0.4s的过渡效果 */
             transition: .4s;
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
         }
 
         .c{
             /* 裁剪文字的上半部分，括号里的四个值分别是
             top，right，bottom，left */
             clip-path: inset(49% 0 0 0);
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
         }
+
         .b{
             /* 裁剪文字的下半部分 */
             clip-path: inset(1% 0 50% 0);
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
         }
         .a:hover .b,.a:hover .c{
             /* 让--i为30的向上移动30px，-30的向下移动30px
             这样子就能空出60px留给中间的超链接 */
             top: calc(var(--i)*1px);
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
         }
+
         .a:hover .d{
             opacity: 1;
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
         }
+
         .d{
             text-decoration: none;
             color: rgb(255, 210, 150);
@@ -53,6 +75,8 @@
             line-height: 150px;
             opacity: 0;
             transition: .3s;
+            font-family: 'Hanuman', serif;
+            font-weight: normal;
         }
     </style>
 </head>
