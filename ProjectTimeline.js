@@ -53,24 +53,14 @@ $("#shell").timeline();
 
 
 // back to top 按钮
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the button element
-    var backToTopBtn = document.getElementById("backToTopBtn");
+    var backToTopButton = document.getElementById("backToTop");
 
-    // Add a scroll event listener
-    window.addEventListener("scroll", function () {
-        // Show or hide the button based on the scroll position
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopBtn.style.display = "block";
-        } else {
-            backToTopBtn.style.display = "none";
-        }
-    });
-
-    // Add a click event listener to scroll to the top when the button is clicked
-    backToTopBtn.addEventListener("click", function () {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    backToTopButton.addEventListener("click", function () {
+        // 滚动到页面顶部
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
 });
