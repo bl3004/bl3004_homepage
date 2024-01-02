@@ -18,70 +18,70 @@ const projects = [
     {
         image:
         "./FilterImage/03.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/04.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/05.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/06.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/07.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/08.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/09.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/10.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/11.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
     {
         image:
         "./FilterImage/12.jpg",
-        name: "URBAN CORRIDOR",
+        name: "..",
         year: "1970s",
         description: "Concept"
     },
