@@ -27,7 +27,7 @@ const projects = [
         "./FilterImage/04.jpg",
         name: "..",
         year: "1970s",
-        description: "Concept"
+        description: "Built"
     },
     {
         image:
@@ -48,28 +48,28 @@ const projects = [
         "./FilterImage/07.jpg",
         name: "..",
         year: "1970s",
-        description: "Concept"
+        description: "Built"
     },
     {
         image:
         "./FilterImage/08.jpg",
         name: "..",
         year: "1970s",
-        description: "Concept"
+        description: "Built"
     },
     {
         image:
         "./FilterImage/09.jpg",
         name: "..",
         year: "1970s",
-        description: "Concept"
+        description: "Built"
     },
     {
         image:
         "./FilterImage/10.jpg",
         name: "..",
         year: "1970s",
-        description: "Concept"
+        description: "Built"
     },
     {
         image:
