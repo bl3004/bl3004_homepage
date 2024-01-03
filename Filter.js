@@ -125,7 +125,7 @@ const projects = [
         image:
         "./FilterImage/15.jpg",
         name: "",
-        year: "",
+        year: ".",
         description: ""
     },
 
