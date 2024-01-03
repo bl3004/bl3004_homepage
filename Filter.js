@@ -5,43 +5,49 @@ const projects = [
         image:
         "./FilterImage/01.jpg",
         name: "RYTHEM UTOPIA",
-        year: "1970s",
-        description: "Concept"
+        year: "2023-NOW",
+        time:"2023",
+        description: "Concept - GSAPP Studio Project - Main Designer"
     },
     {
         image:
         "./FilterImage/02.jpg",
         name: "CAMPUS",
-        year: "1970s",
-        description: "Concept"
+        year: "2021-2022",
+        time:"2022",
+        description: "Concept - RMJM Professional Project - Designer"
     },
     {
         image:
         "./FilterImage/03.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "OFFICE TOWER",
+        year: "2021-2022",
+        time:"2022",
+        description: "Concept - RMJM Professional Project - Main Designer"
     },
     {
         image:
         "./FilterImage/04.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Built"
+        name: "CAMPUS",
+        year: "2021-2022",
+        time:"2022",
+        description: "Built - RMJM Professional Project - Designer & Main Coordinator"
     },
     {
         image:
         "./FilterImage/05.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "CAMPUS",
+        year: "2021-2022",
+        time:"2022",
+        description: "Concept - RMJM Professional Project - Designer"
     },
     {
         image:
         "./FilterImage/06.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "CAMPUS",
+        year: "2021-2022",
+        time:"2022",
+        description: "Concept - RMJM Professional Project - Designer"
     },
     {
         image:
@@ -85,6 +91,32 @@ const projects = [
         year: "1970s",
         description: "Concept"
     },
+    {
+        image:
+        "./FilterImage/13.jpg",
+        name: "..",
+        year: "1970s",
+        description: "Concept"
+    },
+    {
+        image:
+        "./FilterImage/14.jpg",
+        name: "..",
+        year: "1970s",
+        description: "Concept"
+    },
+    {
+        image:
+        "./FilterImage/15.jpg",
+        name: "..",
+        year: "1970s",
+        description: "Concept"
+    },
+
+
+
+
+
 ];
 
 
@@ -115,11 +147,13 @@ const renderProjectsToPage = (items) => {
 
        
 
-        //  color
+        //  year
         let year = document.createElement("p");
         year.textContent = projects[i].year;
 
-
+        // time
+        let time = document.createElement("p");
+        time.textContent = projects[i].time;
 
         //  image
         let image = document.createElement("img");
@@ -140,6 +174,7 @@ const renderProjectsToPage = (items) => {
         ul.appendChild(list_item)
         list_item.appendChild(title)
         // list_item.appendChild(year)
+        list_item.appendChild(time)
         list_item.appendChild(image)
         list_item.appendChild(description)
 

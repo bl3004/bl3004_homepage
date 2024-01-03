@@ -111,6 +111,7 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 20px; 
+  text-decoration: none;
 }
   }
   @media screen and (max-width: 768px){
@@ -119,6 +120,7 @@ img {
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 20px;
+      text-decoration: none;
     }
       }
     
@@ -127,21 +129,23 @@ img {
   color: brown; 
   border: none;
   padding: 5px 10px;
-  
   margin: 3px 8px; /* 按钮之间的间距 */
   cursor: pointer;
   border-radius: 20px;
   font-size: 13px;
   font-family: 'Hanuman', serif;
+  text-decoration: none;
 }
 
 .filter-btn.active {
   background-color:brown; 
   color: #ffffff;
+  text-decoration: none;
 }
 
 
 .button_back{
+  text-decoration: none;
   background-color: #ffffff;
   color: brown;
   border: none;
@@ -151,12 +155,17 @@ img {
   border-radius: 20px;
   font-size: 13px;
   font-family: 'Hanuman', serif;
-  text-decoration: none;
+  
+  
 }
 
 .button_back:hover {
+  text-decoration: none;
   background-color: brown; 
   color: #ffffff;
+  padding: 5px 10px; 
+  margin: 3px 8px;
+  
 }
 
 
@@ -260,9 +269,17 @@ grid-row-end: 3;
   color: #ffffff;
 }
 
+.non_deco{
+  text-decoration: none;
+  color:brown;
+}
 
 
-
+.non_deco:hover{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  background-color: brown;
+}
 
 
 
