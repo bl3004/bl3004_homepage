@@ -7,6 +7,7 @@ const projects = [
         name: "RYTHEM UTOPIA",
         year: "2023-NOW",
         time:"2023",
+        location:"Atlanta, USA",
         description: "Concept - GSAPP Studio Project - Main Designer"
     },
     {
@@ -15,6 +16,7 @@ const projects = [
         name: "CAMPUS",
         year: "2021-2022",
         time:"2022",
+        location:"China",
         description: "Concept - RMJM Professional Project - Designer"
     },
     {
@@ -23,6 +25,7 @@ const projects = [
         name: "OFFICE TOWER",
         year: "2021-2022",
         time:"2022",
+        location:"China",
         description: "Concept - RMJM Professional Project - Main Designer"
     },
     {
@@ -31,6 +34,7 @@ const projects = [
         name: "CAMPUS",
         year: "2021-2022",
         time:"2022",
+        location:"China",
         description: "Built - RMJM Professional Project - Designer & Main Coordinator"
     },
     {
@@ -39,6 +43,7 @@ const projects = [
         name: "CAMPUS",
         year: "2021-2022",
         time:"2022",
+        location:"China",
         description: "Concept - RMJM Professional Project - Designer"
     },
     {
@@ -47,6 +52,7 @@ const projects = [
         name: "CAMPUS",
         year: "2021-2022",
         time:"2022",
+        location:"China",
         description: "Concept - RMJM Professional Project - Designer"
     },
     {
@@ -155,6 +161,10 @@ const renderProjectsToPage = (items) => {
         let time = document.createElement("p");
         time.textContent = projects[i].time;
 
+        // location
+        let location = document.createElement("p");
+        location.textContent = projects[i].location;
+
         //  image
         let image = document.createElement("img");
         image.setAttribute("src", projects[i].image);
@@ -175,6 +185,7 @@ const renderProjectsToPage = (items) => {
         list_item.appendChild(title)
         // list_item.appendChild(year)
         list_item.appendChild(time)
+        list_item.appendChild(location)
         list_item.appendChild(image)
         list_item.appendChild(description)
 

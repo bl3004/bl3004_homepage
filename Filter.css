@@ -25,7 +25,19 @@ body {
   justify-content: center;
 }
 
+h2{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
 
+p{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
 
 
 .list {
