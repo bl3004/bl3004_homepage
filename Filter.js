@@ -94,32 +94,38 @@ const projects = [
     {
         image:
         "./FilterImage/11.jpg",
-        name: "Dartmouth College Anonymous Hall Renovation",
-        year: "2018-2021",
-        time:"2018",
-        location:"MH, USA",
-        description: "Built - LWA Professional Project - Designer & Coordinator"
+        name: "Transit-oriented Innovative Hub",
+        year: "2015-2017",
+        time:"2017",
+        location:"Saint Louis, USA",
+        description: "Concept - Degree Project - Personal"
     },
     {
         image:
         "./FilterImage/12.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "Urban Corridor",
+        year: "2015-2017",
+        time:"2016",
+        location:"Seoul, Korea",
+        description: "Concept - Graduate Project - Personal"
     },
     {
         image:
         "./FilterImage/13.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "The Levee House",
+        year: "2015-2017",
+        time:"2015",
+        location:"New Orleans, USA",
+        description: "Concept - Graduate Project - Personal"
     },
     {
         image:
         "./FilterImage/14.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "Lingnan Food Center",
+        year: "2010-2014",
+        time:"2013",
+        location:"GZ, China",
+        description: "Concept - Undergraduate Project - Personal"
     },
     {
         image:
