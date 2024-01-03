@@ -124,9 +124,9 @@ const projects = [
     {
         image:
         "./FilterImage/15.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "",
+        year: "",
+        description: ""
     },
 
 
