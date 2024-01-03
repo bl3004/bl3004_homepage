@@ -33,7 +33,7 @@ const projects = [
         "./FilterImage/04.jpg",
         name: "CAMPUS",
         year: "2021-2022",
-        time:"2022",
+        time:"2021",
         location:"China",
         description: "Built - RMJM Professional Project - Designer & Main Coordinator"
     },
@@ -42,7 +42,7 @@ const projects = [
         "./FilterImage/05.jpg",
         name: "CAMPUS",
         year: "2021-2022",
-        time:"2022",
+        time:"2021",
         location:"China",
         description: "Concept - RMJM Professional Project - Designer"
     },
@@ -51,44 +51,54 @@ const projects = [
         "./FilterImage/06.jpg",
         name: "CAMPUS",
         year: "2021-2022",
-        time:"2022",
+        time:"2021",
         location:"China",
         description: "Concept - RMJM Professional Project - Designer"
     },
     {
         image:
         "./FilterImage/07.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Built"
+        name: "YOUTUBE Headquarter",
+        year: "2018-2021",
+        time:"2020",
+        location:"CA, USA",
+        description: "Built - EHDD Professional Project - Designer & Coordinator"
     },
     {
         image:
         "./FilterImage/08.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Built"
+        name: "SSU Stevenson Hall Renovation",
+        year: "2018-2021",
+        time:"2020",
+        location:"CA, USA",
+        description: "Built - EHDD Professional Project - Designer & Coordinator"
     },
     {
         image:
         "./FilterImage/09.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Built"
+        name: "CSU Vasche Library Renovation",
+        year: "2018-2021",
+        time:"2019",
+        location:"CA, USA",
+        description: "Built - EHDD Professional Project - Designer & Coordinator"
     },
     {
         image:
         "./FilterImage/10.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Built"
+        name: "Dartmouth College Anonymous Hall Renovation",
+        year: "2018-2021",
+        time:"2018",
+        location:"MH, USA",
+        description: "Built - LWA Professional Project - Designer & Coordinator"
     },
     {
         image:
         "./FilterImage/11.jpg",
-        name: "..",
-        year: "1970s",
-        description: "Concept"
+        name: "Dartmouth College Anonymous Hall Renovation",
+        year: "2018-2021",
+        time:"2018",
+        location:"MH, USA",
+        description: "Built - LWA Professional Project - Designer & Coordinator"
     },
     {
         image:
