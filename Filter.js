@@ -39,6 +39,24 @@ const projects = [
     },
     {
         image:
+        "./FilterImage/04B.jpg",
+        name: "TOD",
+        year: "2021-2022",
+        time:"2021",
+        location:"China",
+        description: "Concept - RMJM Professional Project - Designer"
+    },
+    {
+        image:
+        "./FilterImage/04C.jpg",
+        name: "TOD",
+        year: "2021-2022",
+        time:"2021",
+        location:"China",
+        description: "Concept - RMJM Professional Project - Designer"
+    },
+    {
+        image:
         "./FilterImage/05.jpg",
         name: "CAMPUS",
         year: "2021-2022",
