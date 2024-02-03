@@ -40,7 +40,7 @@ const projects = [
     {
         image:
         "./FilterImage/04B.jpg",
-        name: "TOD",
+        name: "HONGANWEI COMPLEX",
         year: "2021-2022",
         time:"2021",
         location:"China",
@@ -49,7 +49,7 @@ const projects = [
     {
         image:
         "./FilterImage/04C.jpg",
-        name: "TOD",
+        name: "DAYUN TOD",
         year: "2021-2022",
         time:"2021",
         location:"China",
