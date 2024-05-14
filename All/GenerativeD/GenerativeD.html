@@ -11,21 +11,23 @@
 
 /* 其他样式 */
 
-        
         body {
             margin: 0;
             padding: 0;
             font-family: 'Work Sans',sans-serif;
-            display: flex;
-            justify-content: center;
+            display: block;
+            text-align: center;
             align-items: center;
-            height: 100vh;
+            height:auto;
             background-color: rgb(80, 80, 100);
         }
 
         .slideshow-container {
             position: relative;
             max-width: 900px;
+            margin: 0 auto; /* Centers the container */
+            display: block; /* Explicitly define block display */
+            margin-top:50px;
         }
 
         .slide {
@@ -37,6 +39,15 @@
             max-width: 100%;
             max-height: 100%;
             margin: auto; /* 图片居中 */
+        }
+
+
+        .text-container {
+            max-width: 900px;
+            margin: 10px auto; /* Add vertical space and center horizontally */
+            display: block; /* Ensure it is a block element */
+            text-decoration: none;
+            color:#fff;
         }
 
         .prev,
@@ -156,6 +167,12 @@
         </div>
 
     </div>
+
+    <div class="text-container">
+        
+        See <a href="https://medium.com/generative-design-course/interior-comfort-layout-with-lighting-and-plants-ddf20fc8a032">Medium</a> For More Design Details.
+    </div>
+
 
     <script>
         let slideIndex = 1;
