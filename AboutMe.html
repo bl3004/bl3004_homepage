@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: rgb(80, 80, 100);
+            overflow: hidden;
+        }
+
+        /* 定义外层容器样式 */
+        .shell {
+            position: relative;
+            /* 相对定位 */
+            width: 60vw;
+            /* 宽度占视口宽度的60% */
+            height: 40vw;
+            /* 高度占视口高度的40% */
+            max-width: 380px;
+            /* 最大宽度为380像素 */
+            max-height: 250px;
+            /* 最大高度为250像素 */
+            margin: 5px auto 0 auto; /* Adjust the margin-top value as needed */
+            color: white;
+            /* 字体颜色为白色 */
+            perspective: 1000px;
+            /* 透视效果，观察者与z=0平面的距离 */
+            transform-origin: center;
+            /* 变形原点为中心 */
+        }
+
+        /* 定义内容容器样式 */
+        .content {
+            display: flex;
+            /* 设置为弹性盒子布局 */
+            justify-content: center;
+            /* 主轴居中对齐 */
+            align-items: center;
+            /* 交叉轴居中对齐 */
+            position: absolute;
+            /* 绝对定位 */
+            width: 100%;
+            /* 宽度100% */
+            height: 100%;
+            /* 高度100% */
+            transform-origin: center;
+            /* 变形原点为中心 */
+            transform-style: preserve-3d;
+            /* 保持3D变换 */
+            transform: translateZ(-30vw) rotateY(0);
+            /* 变换：沿z轴平移-30vw，绕y轴旋转0度 */
+            animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+            /* 动画：名称为carousel，持续时间9秒，无限循环，缓动函数为cubic-bezier(0.77, 0, 0.175, 1)，动画结束后保持最后状态 */
+        }
+
+        /* 定义项目样式 */
+        .item {
+            position: absolute;
+            /* 绝对定位 */
+            width: 60vw;
+            /* 宽度占视口宽度的60% */
+            height: 20vw;
+            /* 高度占视口高度的40% */
+            max-width: 380px;
+            /* 最大宽度为380像素 */
+            max-height: 250px;
+            /* 最大高度为250像素 */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            /* 设置阴影 */
+            border-radius: 6px;
+            /* 边框圆角半径为6像素 */
+            background-size: cover;
+            /* 背景图片等比例缩放并覆盖整个容器 */
+            -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
+            /* 创建倒影效果 */
+            background-position: center; 
+        }
+
+        /* 第一个项目样式 */
+        .item:nth-child(1) {
+            background-image: url(./ContactImage/01.jpg);
+            transform: rotateY(0) translateZ(35vw);
+            /* 变换：绕y轴旋转0度，沿z轴平移35vw */
+        }
+
+        /* 第二个项目样式 */
+        .item:nth-child(2) {
+            background-image: url(./ContactImage/02.jpg);
+            /* 背景图片为02.jpg */
+            transform: rotateY(120deg) translateZ(35vw);
+            /* 变换：绕y轴旋转120度，沿z轴平移35vw */
+        }
+
+        /* 第三个项目样式 */
+        .item:nth-child(3) {
+            background-image: url(./ContactImage/03.jpg);
+            /* 背景图片为03.jpg */
+            transform: rotateY(240deg) translateZ(35vw);
+            /* 变换：绕y轴旋转240度，沿z轴平移35vw */
+        }
+
+
+        
+
+        /* 定义动画 */
+        @keyframes carousel {
+
+            0%,
+            17.5% {
+                transform: translateZ(-25vw) rotateY(0);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转0度 */
+            }
+
+            27.5%,
+            45% {
+                transform: translateZ(-25vw) rotateY(-120deg);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转-120度 */
+            }
+
+            55%,
+            72.5% {
+                transform: translateZ(-25vw) rotateY(-240deg);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转-240度 */
+            }
+
+            82.5%,
+            100% {
+                transform: translateZ(-25vw) rotateY(-360deg);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转-360度 */
+            }
+        }
+
+
+        .text1 {
+            font-family: 'Hanuman', serif;
+            font-weight: 500; 
+            color: white;
+            /* text-shadow: 2px 2px 4px #ba8391; */
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5px;
+            }
+
+        .text2 {
+            font-family: 'Hanuman', serif;
+            font-weight: bolder; 
+            color: brown;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5px;
+        }
+
+        .text3 {
+            text-decoration: none;
+            font-family: 'Hanuman', serif;
+    
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            z-index: 999;
+        }
+
+        .text4 {
+            font-family: 'Hanuman', serif;
+            color: rgb(185, 185, 185);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;  
+            padding-bottom: 15px;
+        }
+
+        .back {
+            position: fixed;
+            Top: 22px;
+            right: 85px;
+            color: #777;
+            padding: 8px 10px;
+            cursor: pointer;
+            font-family: 'Work Sans',sans-serif;
+            z-index: 999;
+            font-size:14px;
+            transition: color 0.3s ease;
+        }
+
+        .back:hover {
+            color: #000;
+        }
+
+
+       
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="text1">Biying Li</div>
+
+    <div class="text2">LEED AP BD+C | Architecture & Urban Design</div>
+    <div class="text2">Email: bl3004@columbia.edu</div>
+    <!-- <div class="text4">by Biying Li</div> -->
+    <br>
+    <div class="text3">OTHER PROJECT WEBSITES</div>
+   
+   
+
+        <a href="https://medium.com/generative-design-course/interior-comfort-layout-with-lighting-and-plants-ddf20fc8a032" style="text-decoration: none;" color="white;">Generative Design Medium
+        </a> 
+
+        <a href="https://storymaps.arcgis.com/stories/ceee4b7348d944d886854e73ed92699d" style="text-decoration: none;" color="white;">Regenerative Rio Grande StoryMap
+        </a>
+        
+        <a href="https://issuu.com/bl3004/docs/li_biying_bl3004_msaud_port2024" style="text-decoration: none;" color="white;">GSAPP MSAUD Graduation Portfolio
+        </a>
+
+        <a href="https://issuu.com/bl3004/docs/portfolio_application_practical" style="text-decoration: none;" color="white;">Pratical Works Portfolio
+        </a>
+        
+    </div>
+
+    <br>
+
+    <div class="text3">SKILLS</div>
+   
+        <a class="text4">Project Management, Website Development, Computational Design, Generative Design, Spatial AI, <br>UIUX Design, Sustainable Design, Product Design, Graphics, Video Producing, Animation...</a>
+        <a class="text4">Computer Language: Python, Javascript, Html, CSS, SQL
+        </a>
+        <a class="text4">Computer Tools: Revit, BIM, Rhino, Sketch Up, AutoCAD, SubD, 3DMax, Grasshopper, Kangaroo...
+            <br>Adobe Suite - PS, ID, AI, Premiere, After Effect...
+            <br>Enscape, V-Ray, Lumion, Keyshot
+            <br>GIS, Flow Design, DIVA, Ecotect, eQuest...
+            <br>Bluebeam, ASANA, Microsoft Office Suite
+    </div>
+
+
+
+    <!-- <div class="shell">
+        <div class="content">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+        </div>
+    </div> -->
+
+    <!-- <a class="text3" href="https://bl3004.github.io/bl3004_homepage/ProjectTimeline.html">
+    <div class="text3">ENTER</div>
+    </a> -->
+
+    <div class="back" id="backBtn">HOME</div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var backBtn = document.getElementById("backBtn");
+
+            // 点击返回按钮时跳转到指定页面
+            backBtn.addEventListener("click", function () {
+                window.location.href = "https://bl3004.github.io/bl3004_homepage/Homepage.html";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

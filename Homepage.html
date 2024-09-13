@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@300;400;900&display=swap" rel="stylesheet">
+
+
+    <title>WELCOME</title>
+    <style>
+        body{
+            /* background-color: rgb(80, 80, 100); */
+            background-color:black;
+            display: flex;
+            justify-content: center;
+        }
+        .a{
+            position: relative;
+            top: 250px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            margin: 0 30px;
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
+        }
+        .c,.b{
+            font: 900 100px '';
+            line-height: 150px;
+            position: absolute;
+            color: brown;
+            top: 0;
+            /* 使文字上下移动时有0.4s的过渡效果 */
+            transition: .4s;
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
+        }
+
+        .c{
+            /* 裁剪文字的上半部分，括号里的四个值分别是
+            top，right，bottom，left */
+            clip-path: inset(49% 0 0 0);
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
+        }
+
+        .b{
+            /* 裁剪文字的下半部分 */
+            clip-path: inset(1% 0 50% 0);
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
+        }
+        .a:hover .b,.a:hover .c{
+            /* 让--i为30的向上移动30px，-30的向下移动30px
+            这样子就能空出60px留给中间的超链接 */
+            top: calc(var(--i)*1px);
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
+        }
+
+        .a:hover .d{
+            opacity: 1;
+            font-family: 'Hanuman', serif;
+            font-weight: bold;
+        }
+
+        .d{
+            text-decoration: none;
+            /* color: rgb(255, 210, 150); */
+            color:rgb(80, 80, 100);
+            font: 600 30px '';
+            line-height: 150px;
+            opacity: 0;
+            transition: .3s;
+            font-family: 'Hanuman', serif;
+            font-weight: normal;
+        }
+
+
+
+        @media (max-width: 800px) {
+        
+        
+            .c, .b {
+                font-size: 50px;
+                line-height: 80px;
+               
+            }
+            .d {
+                font-size: 15px;
+              
+                line-height: 1; /* 设置为1，以使文本在单行中居中 */
+                transition: .3s;
+                font-weight: lighter;
+                position: absolute;
+                position: absolute;
+                top: 30px; /* 设置为向下移动的距离，可以根据需要调整这个值 */
+                white-space: nowrap; /* 阻止文本换行 */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b" style="--i:-30">BIYING</div>
+        <div class="c" style="--i:30">BIYING</div>
+        <a href="https://bl3004.github.io/bl3004_homepage/OtherWorks.html" class="d">Other Works</a>
+    </div>
+    <div class="a">
+        <div class="b" style="--i:-30">LI'S</div>
+        <div class="c" style="--i:30">LI'S</div>
+        <a href="https://bl3004.github.io/bl3004_homepage/WorkList.html" class="d">Main Works</a>
+    </div>
+    <div class="a">
+        <div class="b" style="--i:-30">WORKS</div>
+        <div class="c" style="--i:30">WORKS</div>
+        <a href="https://bl3004.github.io/bl3004_homepage/AboutMe.html" class="d">About Me</a>
+    </div>
+    
+</body>
+</html>

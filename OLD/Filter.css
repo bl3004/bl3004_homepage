@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+height: 100%;
+/* background-image:linear-gradient(to right, #a18cd1, #fbc2eb); */
+background-color: rgb(80, 80, 100);
+background-size: cover; 
+background-repeat: no-repeat;  
+background-attachment: fixed;  
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Hanuman', serif;
+  text-decoration: none;
+  color: #ffffff;
+  position:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+
+.list {
+padding: 10px;
+width: auto;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+ul {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-gap: 20px;
+}}
+
+
+@media screen and (max-width: 768px) {
+ 
+  ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  }}
+  
+
+
+li {
+list-style-type: none;
+border: 1px dashed brown;
+
+padding: 10px;
+margin: 10px;
+}
+
+li:hover {
+background-color: brown; 
+}
+
+
+.hide{
+  display:none;
+}
+
+.show{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0px; 
+  }
+
+  .explain_text {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: 10px;
+    font-family: 'Hanuman', serif;
+    color: white;
+  }
+  
+
+
+
+  @media screen and (min-width: 768px){
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+  text-decoration: none;
+}
+  }
+  @media screen and (max-width: 768px){
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+      }
+    
+.filter-btn {
+  background-color: #ffffff; 
+  color: brown; 
+  border: none;
+  padding: 5px 10px;
+  margin: 3px 8px; /* 按钮之间的间距 */
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: 'Hanuman', serif;
+  text-decoration: none;
+}
+
+.filter-btn.active {
+  background-color:brown; 
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.button_back{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: brown;
+  border: none;
+  padding: 5px 10px; 
+  margin: 3px 8px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: 'Hanuman', serif;
+  
+  
+}
+
+.button_back:hover {
+  text-decoration: none;
+  background-color: brown; 
+  color: #ffffff;
+  padding: 5px 10px; 
+  margin: 3px 8px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .filters {
+  display: flex;
+  justify-content: flex-end; // 或 justify-content: space-between;
+  margin-top: 20px;
+} */
+
+
+/*  
+.item--1 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 1;
+grid-column-end: 2;
+
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.item--2 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 2;
+grid-column-end: 3;
+
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.item--3 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 3;
+grid-column-end: 4;
+
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.item--4 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 1;
+grid-column-end: 2;
+
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.item--5 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 3;
+grid-column-end: 5;
+
+grid-row-start: 2;
+grid-row-end: 3;
+}
+*/
+
+
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%; 
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  color: brown;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: none;
+  border-radius: 20px; 
+  font-size: 13px;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  text-decoration: none;
+}
+
+#backToTopBtn:hover {
+  background-color: brown; 
+  color: #ffffff;
+}
+
+.non_deco{
+  text-decoration: none;
+  color:brown;
+}
+
+
+.non_deco:hover{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  background-color: brown;
+}
+
+
+
+
+
+
+.card .description {
+  display: none;
+}
+
+.card.is-flipped .description {
+  display: block;
+}
+
+
+
+
+
+
+
+

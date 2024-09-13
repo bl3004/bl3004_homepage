@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap");
+
+
+/* 其他样式 */
+
+        
+
+body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Work Sans',sans-serif;
+            display: block;
+            text-align: center;
+            align-items: center;
+            height:auto;
+            background-color: rgb(80, 80, 100);
+        }
+
+
+      
+        .slideshow-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto; /* Centers the container */
+            display: block; /* Explicitly define block display */
+            margin-top:50px;
+        }
+
+        .slide {
+            display: none;
+            transition: opacity 0.6s ease; /* 添加过渡效果 */
+        }
+
+        .slide img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto; /* 图片居中 */
+        }
+
+        .caption {
+            text-align: center;  /* Center the text horizontally */
+            color: #fff;  /* Set text color, change as needed */
+            font-size: 12px;  /* Set text size, adjust as needed */
+            padding: 5px;  /* Add some padding around the text */
+        }
+
+
+        .text-container {
+            max-width: 900px;
+            margin: 10px auto; /* Add vertical space and center horizontally */
+            display: block; /* Ensure it is a block element */
+            text-decoration: none;
+            color:#fff;
+        }
+
+
+
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgb(173, 33, 33);
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 8%;
+            background-color: transparent; /* 取消底色 */
+            padding: 12px;
+            z-index: 1; /* 让箭头在图片上层显示 */
+        }
+
+        .prev {
+            left: 10px; /* 调整左边距 */
+        }
+
+        .next {
+            right: 10px; /* 调整右边距 */
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* 半透明白色背景 */
+            border-color: rgba(255, 255, 255, 0.3); /* 半透明白色边框 */
+        }
+
+        .navbar {
+            position: absolute;
+            top: 27px; /* 往下移动  */
+            right: 100px;
+            display: flex;
+            /* Set display to flex */
+            z-index: 9999; /* Ensure links are above slideshow */
+        }
+
+        .navbar a {
+            color: #777;
+            text-decoration: none;
+            margin-left: 5px; /* 缩小左边距 */
+            margin-top: 2px; /* 往下移动 10px */
+            transition: color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .navbar a:hover {
+            color: #000;
+        }
+
+
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="https://bl3004.github.io/bl3004_homepage/WorkList.html">BACK</a>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="prev" onclick="changeSlide(-1)">&lt;</div>
+        <div class="next" onclick="changeSlide(1)">&gt;</div>
+        <div class="slide">
+            <img src="./01.jpg">
+        </div>
+        <div class="slide">
+            <img src="./02.jpg">
+        </div>
+        <div class="slide">
+            <img src="./03.jpg">
+        </div>
+        <div class="slide">
+            <img src="./04.jpg">
+        </div>
+        <div class="slide">
+            <img src="./05.jpg">
+        </div>
+        <div class="slide">
+            <img src="./06.jpg">
+        </div>
+        <div class="slide">
+            <img src="./07.jpg">
+        </div>
+    </div>
+
+
+    <div class="text-container">
+        <div>
+            <div class="center_text">
+                Firm: EHDD(SF) | My Role: Architectural Designer II
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let slideIndex = 1;
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        showSlides(slideIndex);
+    </script>
+
+
+
+
+</body>
+
+</html>
